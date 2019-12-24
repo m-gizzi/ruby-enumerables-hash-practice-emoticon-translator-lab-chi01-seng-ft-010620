@@ -25,5 +25,8 @@ end
 
 def get_english_meaning(file_path, emote)
   dictionary = load_library(file_path)
-  dictionary
+  if dictionary[:get_meaning][emote]
+    dictionary[:get_meaning][emote]
+  else
+    
 end
