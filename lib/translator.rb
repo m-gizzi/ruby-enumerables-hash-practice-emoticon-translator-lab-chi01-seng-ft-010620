@@ -8,7 +8,7 @@ def load_library(file_path)
   english.each do | word |
     return_hash[:get_meaning][start[word][1]] = word
   end
-  p english
+  p return_hash
 end
 
 def get_japanese_emoticon
