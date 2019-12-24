@@ -28,5 +28,6 @@ def get_english_meaning(file_path, emote)
   if dictionary[:get_meaning][emote]
     dictionary[:get_meaning][emote]
   else
-    
+    "Sorry, that emoticon was not found"
+  end
 end
