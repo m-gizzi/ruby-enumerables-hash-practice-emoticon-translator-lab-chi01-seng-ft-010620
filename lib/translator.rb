@@ -11,12 +11,11 @@ def load_library(file_path)
   english.each do | word |
     return_hash[:get_emoticon][start[word][0]] = start[word][1]
   end
-  return_hash
 end
 
 def get_japanese_emoticon(file_path, emote)
   load_library(file_path)
-  p english
+  
 end
 
 def get_english_meaning
