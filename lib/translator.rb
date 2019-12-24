@@ -19,7 +19,8 @@ def get_japanese_emoticon(file_path, emote)
   if dictionary[:get_emoticon][emote]
     dictionary[:get_emoticon][emote]
   else
-    puts 
+    puts "Sorry, that emoticon was not found"
+  end
 end
 
 def get_english_meaning
