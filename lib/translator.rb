@@ -6,7 +6,7 @@ def load_library(file_path)
   return_hash = {get_meaning: {}, get_emoticon: {}}
   english = start.keys
   english.each do | word |
-    return_hash[:get_meaning][start[word][1]] = {}
+    return_hash[:get_meaning][start[word][1]] = word
   end
   p english
 end
