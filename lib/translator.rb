@@ -16,7 +16,10 @@ end
 
 def get_japanese_emoticon(file_path, emote)
   dictionary = load_library(file_path)
-  dictionary[:get_emoticon][emote]
+  if dictionary[:get_emoticon][emote]
+    dictionary[:get_emoticon][emote]
+  else
+    puts 
 end
 
 def get_english_meaning
