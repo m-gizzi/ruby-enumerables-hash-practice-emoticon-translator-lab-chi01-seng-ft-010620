@@ -9,7 +9,7 @@ def load_library(file_path)
     return_hash[:get_meaning][start[word][1]] = word
   end
   english.each do | word |
-    return_hash[:get_emoticon][start[word][0]] = [start[word][1]]
+    return_hash[:get_emoticon][start[word][0]] = start[word][1]
   end
   p return_hash
 end
